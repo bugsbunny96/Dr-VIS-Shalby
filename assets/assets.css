@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(../images/dr.vis.jpg) top left;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 100px;
+}
+
+.box-shadow12 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+.space {
+    margin: 100px;
+}
+
+.half-space {
+    margin: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.cards > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.cards > .card:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 25px;
+}
+
+.cards > .tri-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards > .tri-sec > .sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.cards > .tri-sec > .sec:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 25px;
+}
+
+/* carousel */
+.carousel {
+    --current-slide: 0;
+    /* we set position relative so absolute position works properly for the buttons */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-button {
+    /* vertically centering the buttons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  
+    /* basic styling */
+    padding: 0;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+  
+    font-size: 1.5rem;
+    cursor: pointer;
+  
+    transition: color 0.1s;
+}
+
+.carousel-button:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button_next {
+    /* The "next slide button" will be at the right */
+    right: 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-button {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+}
+/* carousel */

@@ -1,0 +1,36 @@
+.hero .container .brand img {
+    width: 200px;
+    padding: 20px;
+    margin: 45px;
+}
+
+.hero .container .form {
+    float: right;
+    width: 500px;
+}
+.form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.form > form > input, textarea, button {
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px 5px;
+    margin: 10px 5px;
+    border-radius: 15px;
+}
+
+.carousel > .slides > .slide > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
