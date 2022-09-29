@@ -39,3 +39,13 @@ function setUpCarousel(carousel) {
 const carousels = document.querySelectorAll('[data-carousel]');
 carousels.forEach(setUpCarousel);
 // carousel
+
+// Accordion
+const accordion = document.getElementsByClassName('container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+// Accordion

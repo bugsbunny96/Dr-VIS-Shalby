@@ -87,12 +87,14 @@ p {
     /* we set position relative so absolute position works properly for the buttons */
     position: relative;
     overflow: hidden;
+    background-color: #065bab;
+    padding: 25px;
 }
 
 .carousel-button {
     /* vertically centering the buttons */
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     z-index: 1;
   
@@ -126,6 +128,7 @@ p {
 
 .slide {
     flex: 0 0 100%;
+    color: aliceblue;
 }
 
 @media screen and (min-width: 768px) {
@@ -135,3 +138,11 @@ p {
     }
 }
 /* carousel */
+
+/* footer */
+.footer {
+    background-color: #065bab;
+    padding: 10px;
+    color: white
+}
+/* footer */
