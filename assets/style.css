@@ -35,50 +35,64 @@
     border-radius: 50%;
 }
 
-/* accordion */
-.accordion {
-    max-width: 800px;
-    margin: 90px auto;
-    color: black;
-    background-color: white;
-    padding: 45px 45px;
-}
-.accordion .ac {
-    position: relative;
-    padding: 10px 10px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
-.accordion .ac .label {
-    position: relative;
-    padding: 10px 0;
-    color: black;
-    cursor: pointer;
-}
-/* Positions the plus sign 5px from the right. Centers it using the transform property. */
-.accordion .ac .label::before {
-    content: '+';
-    color: black;
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    transform: translateY(-50%);
-}
-/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-.accordion .ac .content {
-    position: relative;
-    background: white;
-    height: 0;
-    text-align: justify;
-    width: 780px;
-    overflow: hidden;
-    transition: 0.5s;
-}
-/* Adds a horizontal line between the contents */
-.accordion hr {
-    width: 100;
-    margin-left: 0;
-    border: 1px solid grey;
-}
-/* accordion */
+/* -----------------------------------------++++++++++++++++++++++++++++++++++++++++++--------------------------------------------- */
 
+/* accordion */
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+/* accordion */
