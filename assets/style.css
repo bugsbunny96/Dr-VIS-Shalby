@@ -1,5 +1,6 @@
 .hero .container .brand img {
     width: 200px;
+    background-color: #F9F9F9;
     padding: 20px;
     margin: 45px;
 }
@@ -7,6 +8,7 @@
 .hero .container .form {
     float: right;
     width: 500px;
+    margin-top: -70px;
 }
 .form form {
     width: 100%;
@@ -96,3 +98,106 @@ flex-direction: column;
     /* Unicode character for "minus" sign (-) */
 }
 /* accordion */
+
+/* --------------------++++++++++++++++++++-------------------- */
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* RESPONSIVE */
+@media (min-width: 320px) and (max-width: 480px) /*Mobile devices*/ {
+    /* body {
+      background-color: red;
+    } */
+    .hero .container .brand img {
+        width: 150px;
+        background-color: #F9F9F9;
+        padding: 2px 1px;
+        margin: 5px 1px;
+    }
+    .hero .container .form {
+        float: right;
+        width: 300px;
+        margin-top: -60px;
+        margin-right: 0px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+    .tri-sec > .mid > img {
+        width: 180px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) /*iPads, Tablets*/ {
+    /* body {
+      background-color: greenyellow;
+    } */
+    .hero .container .brand img {
+        width: 150px;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    .hero .container .form {
+        float: right;
+        width: 300px;
+        margin-top: -90px;
+    }
+    .cards > .tri-sec {
+        flex-direction: row;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .tri-sec > .mid > img {
+        width: 225px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) /*Small screens, laptops*/ {
+    /* body {
+      background-color: skyblue;
+    } */
+    .hero .container .form {
+        float: right;
+        width: 300px;
+        margin-top: -90px;
+    }
+    .tri-sec > .mid > img {
+        width: 360px;
+        height: 760px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px) /*Extra large screens, TV*/ {
+    /* body {
+      background-color: yellow;
+    } */
+    .hero .container .form {
+        float: right;
+        width: 400px;
+        margin-top: -90px;
+    }
+    .tri-sec > .mid > img {
+        width: 360px;
+    }
+}
+@media (min-width: 1441px) /*UHD screen*/ {
+    /* body {
+      background-color: pink;
+    } */
+    .hero{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background: url(../images/dr.vis.jpg) top left;
+        background-size: cover;
+    }
+    .tri-sec > .mid > img {
+        width: 400px;
+    }
+}
+/* RESPONSIVE */
