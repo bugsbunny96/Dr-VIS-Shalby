@@ -124,7 +124,7 @@ flex-direction: column;
     .hero .container .form {
         float: right;
         width: 300px;
-        margin-top: -60px;
+        margin-top: 210px;
         margin-right: -90px;
     }
     .cards {
@@ -135,6 +135,13 @@ flex-direction: column;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
+    }
+    .form > form > input, textarea, button {
+        font-weight: bold;
+        font-size: medium;
+        padding: 2px;
+        margin: 2px;
+        border-radius: 15px;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) /*iPads, Tablets*/ {
