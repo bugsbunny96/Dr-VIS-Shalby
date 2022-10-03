@@ -109,9 +109,12 @@ flex-direction: column;
 
 /* RESPONSIVE */
 @media (min-width: 320px) and (max-width: 480px) /*Mobile devices*/ {
-    /* body {
+    body {
       background-color: red;
-    } */
+      width: 100%;
+      margin: 2px;
+      padding: 2px;
+    }
     .hero .container .brand img {
         width: 150px;
         background-color: #F9F9F9;
@@ -122,15 +125,16 @@ flex-direction: column;
         float: right;
         width: 300px;
         margin-top: -60px;
-        margin-right: 0px;
+        margin-right: -90px;
     }
     .cards {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
+        flex-direction: column;
     }
     .tri-sec > .mid > img {
-        width: 180px;
+        width: 85px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 20px;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) /*iPads, Tablets*/ {
@@ -145,16 +149,19 @@ flex-direction: column;
     .hero .container .form {
         float: right;
         width: 300px;
-        margin-top: -90px;
+        margin-right: -80px;
     }
     .cards > .tri-sec {
         flex-direction: row;
     }
     .cards {
-        flex-direction: column;
+        flex-direction: row;
     }
     .tri-sec > .mid > img {
         width: 225px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 20px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) /*Small screens, laptops*/ {
@@ -170,6 +177,9 @@ flex-direction: column;
         width: 360px;
         height: 760px;
     }
+    .cards {
+        flex-direction: row;
+    }
 }
 @media (min-width: 1025px) and (max-width: 1440px) /*Extra large screens, TV*/ {
     /* body {
@@ -182,6 +192,9 @@ flex-direction: column;
     }
     .tri-sec > .mid > img {
         width: 360px;
+    }
+    .cards {
+        flex-direction: row;
     }
 }
 @media (min-width: 1441px) /*UHD screen*/ {
@@ -198,6 +211,9 @@ flex-direction: column;
     }
     .tri-sec > .mid > img {
         width: 400px;
+    }
+    .cards {
+        flex-direction: row;
     }
 }
 /* RESPONSIVE */

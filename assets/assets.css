@@ -43,7 +43,7 @@ p {
 
 .cards {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-evenly;
     align-items:flex-start;
     width: 100%;
